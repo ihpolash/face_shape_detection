@@ -3,5 +3,5 @@ from face_shape import views
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('face_detect/', views.FaceDetectView.as_view(), name='facedetect'),
+    path('face_detect/', views.FaceShapeDetectView.as_view(), name='faceshapedetect'),
 ]

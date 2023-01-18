@@ -9,12 +9,12 @@ from rest_framework.response import Response
 import client
 from rest_framework.throttling import UserRateThrottle, AnonRateThrottle
 
-class FaceDetectSerializer(serializers.Serializer):
+class FaceShapeDetectSerializer(serializers.Serializer):
     image = serializers.ImageField()
 
-class FaceDetectView(GenericAPIView):
+class FaceShapeDetectView(GenericAPIView):
     permission_classes = [permissions.AllowAny]
-    serializer_class = FaceDetectSerializer
+    serializer_class = FaceShapeDetectSerializer
 
     def post(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)

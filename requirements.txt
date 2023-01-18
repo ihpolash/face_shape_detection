@@ -3,4 +3,5 @@ djangorestframework
 tensorflow
 whitenoise
 opencv-python
+imutils
 # dlib
